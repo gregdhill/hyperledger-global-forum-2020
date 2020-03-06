@@ -35,7 +35,7 @@ BurrowDir = ".burrow"
   Enabled = true
   Seeds = ""
   SeedMode = false
-  PersistentPeers = "tcp://c87151c46a21c5dbcd80cf6e20ede346ebf512aa@127.0.0.1:26656"
+  PersistentPeers = "tcp://c87151c46a21c5dbcd80cf6e20ede346ebf512aa@10.38.249.154:26656"
   ListenHost = "0.0.0.0"
   ListenPort = "26656"
   ExternalAddress = ""
@@ -88,4 +88,3 @@ BurrowDir = ".burrow"
     [Logging.RootSink.Output]
       OutputType = "stdout"
       Format = "json"
-
