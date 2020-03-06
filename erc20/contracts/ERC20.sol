@@ -1,9 +1,5 @@
-pragma solidity ^0.5.0;
+// TODO - Mintable
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+// TODO - Burnable
 
-contract Mintable is ERC20 {
-    function mint(address account, uint256 amount) public {
-        _mint(account, amount);
-    }
-}
+// TODO - Capped
