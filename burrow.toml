@@ -1,0 +1,91 @@
+BurrowDir = ".burrow"
+
+[GenesisDoc]
+  GenesisTime = 2020-03-04T17:18:48Z
+  ChainName = "BurrowChain_365586"
+  [GenesisDoc.Params]
+    ProposalThreshold = 3
+  [GenesisDoc.GlobalPermissions]
+    [GenesisDoc.GlobalPermissions.Base]
+      Perms = "send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | hasRole"
+      SetBit = "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | identify | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole"
+
+  [[GenesisDoc.Accounts]]
+    Address = "6114B452E3243131192DC7B13EB1418D9E10306B"
+    PublicKey = "{\"CurveType\":\"ed25519\",\"PublicKey\":\"A4770B1A494BF8967736115F60B7A5F49918495150A16E54375F82B512701711\"}"
+    Amount = 9999999999
+    Name = "Validator_0"
+    [GenesisDoc.Accounts.Permissions]
+      [GenesisDoc.Accounts.Permissions.Base]
+        Perms = "bond"
+        SetBit = "bond"
+
+  [[GenesisDoc.Validators]]
+    Address = "6114B452E3243131192DC7B13EB1418D9E10306B"
+    PublicKey = "{\"CurveType\":\"ed25519\",\"PublicKey\":\"A4770B1A494BF8967736115F60B7A5F49918495150A16E54375F82B512701711\"}"
+    Amount = 9999999998
+    Name = "Validator_0"
+
+    [[GenesisDoc.Validators.UnbondTo]]
+      Address = "6114B452E3243131192DC7B13EB1418D9E10306B"
+      PublicKey = "{\"CurveType\":\"ed25519\",\"PublicKey\":\"A4770B1A494BF8967736115F60B7A5F49918495150A16E54375F82B512701711\"}"
+      Amount = 9999999998
+
+[Tendermint]
+  Enabled = true
+  Seeds = ""
+  SeedMode = false
+  PersistentPeers = "tcp://c87151c46a21c5dbcd80cf6e20ede346ebf512aa@127.0.0.1:26656"
+  ListenHost = "0.0.0.0"
+  ListenPort = "26656"
+  ExternalAddress = ""
+  AddrBookStrict = false
+  Moniker = ""
+  IdentifyPeers = false
+  AuthorizedPeers = ""
+  CreateEmptyBlocks = "5m"
+
+[Execution]
+  TimeoutFactor = 0.33
+  CallStackMaxDepth = 0
+  DataStackInitialCapacity = 1024
+  DataStackMaxDepth = 0
+
+[Keys]
+  GRPCServiceEnabled = true
+  AllowBadFilePermissions = false
+  RemoteAddress = ""
+  KeysDirectory = ".keys"
+
+[RPC]
+  [RPC.Info]
+    Enabled = true
+    ListenHost = "0.0.0.0"
+    ListenPort = "26658"
+  [RPC.Profiler]
+    Enabled = false
+    ListenHost = "0.0.0.0"
+    ListenPort = "6060"
+  [RPC.GRPC]
+    Enabled = true
+    ListenHost = "0.0.0.0"
+    ListenPort = "10997"
+  [RPC.Metrics]
+    Enabled = false
+    ListenHost = "0.0.0.0"
+    ListenPort = "9102"
+    MetricsPath = "/metrics"
+    BlockSampleSize = 100
+  [RPC.Web3]
+    Enabled = true
+    ListenHost = "0.0.0.0"
+    ListenPort = "26660"
+
+[Logging]
+  Trace = false
+  NonBlocking = false
+  [Logging.RootSink]
+    [Logging.RootSink.Output]
+      OutputType = "stdout"
+      Format = "json"
+
