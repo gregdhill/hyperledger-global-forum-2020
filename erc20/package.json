@@ -1,0 +1,7 @@
+{
+  "name": "erc20",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.5.0"
+  }
+}

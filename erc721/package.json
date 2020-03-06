@@ -1,0 +1,19 @@
+{
+  "name": "erc721",
+  "license": "ISC",
+  "scripts": {
+    "build": "ts-node src/build.ts",
+    "test": "mocha -r ts-node/register 'src/test/*.test.ts'"
+  },
+  "dependencies": {
+    "@hyperledger/burrow": "0.29.8-rc4",
+    "@openzeppelin/contracts": "^2.5.0",
+    "@types/node": "^13.7.7",
+    "assert": "^2.0.0",
+    "ethereumjs-abi": "^0.6.8",
+    "google-protobuf": "^3.11.4",
+    "solc": "0.5.12",
+    "solts": "0.0.5",
+    "typescript": "^3.8.3"
+  }
+}

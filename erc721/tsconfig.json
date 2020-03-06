@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "preserveSymlinks": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": true,
+  },
+  "exclude": [
+    "node_modules",
+  ]
+}
