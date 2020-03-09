@@ -2,6 +2,7 @@
   "name": "erc20",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "^2.5.0"
+    "@openzeppelin/contracts": "^2.5.0",
+    "truffle": "^5.1.16"
   }
 }
